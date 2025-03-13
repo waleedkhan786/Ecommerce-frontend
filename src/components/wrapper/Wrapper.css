@@ -1,0 +1,180 @@
+.parent-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  height: 120vh;
+  width: 78vw;
+}
+.section1 {
+  background-color: blueviolet;
+  display: grid;
+  grid-column: 1 / span 2;
+  border-radius: 45px;
+  padding: 70px 0;
+  height: 200px;
+  background-image: url("./Section1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-items: center;
+}
+.disc p {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  background-color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+.section2 {
+  background-color: rgb(43, 226, 147);
+  display: grid;
+  grid-row: 1 / span 2;
+  grid-column: 3 / 4;
+  border-radius: 25px;
+  background-image: url("./Section2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: end;
+  padding: 20px;
+}
+.price {
+  background-color: rgb(91, 91, 237);
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.section3 {
+  background-color: rgb(226, 43, 43);
+
+  display: grid;
+
+  grid-row: 1 / span 2;
+  grid-column: 4/ -1;
+  border-radius: 25px;
+  background-image: url("./Section3.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section4 {
+  background-color: rgb(198, 226, 43);
+  display: grid;
+  grid-column: 1 / span 2;
+
+  border-radius: 45px;
+  height: 200px;
+  padding: 70px 30px;
+  background-image: url("./Section4.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+.section5 {
+  background-color: rgb(43, 153, 226);
+  border-radius: 25px;
+  background-image: url("./Section5.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.section5 p {
+  height: 50px;
+  width: 100px;
+  display: flex;
+  background-color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+.favourite {
+  width: 200px;
+  height: 50px;
+  border-radius: 35px;
+  background-color: antiquewhite;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section6 {
+  border: 1px solid #ccc;
+  height: 250px;
+  width: 250px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section7 {
+  background-color: rgb(198, 226, 43);
+  display: grid;
+  padding: 70px 30px;
+  grid-column: 3 / span 2;
+  border-radius: 25px;
+  background-image: url("./Section7.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+.favourite-c {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  background-color: antiquewhite;
+  height: 150px;
+  width: 200px;
+  border-radius: 25px;
+  padding: 10px;
+}
+.one {
+  background-image: url("./Section6a.jpeg");
+  display: grid;
+
+  grid-row: 1 / span 2;
+  border-radius: 25px;
+  width: 70px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.two {
+  background-image: url("./Section6b.jpeg");
+  border-radius: 15px;
+  height: 80px;
+  width: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.three {
+  background-color: white;
+  border-radius: 25px;
+  height: 40px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7px;
+}

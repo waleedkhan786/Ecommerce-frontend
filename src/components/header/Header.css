@@ -1,0 +1,121 @@
+.navbar{
+    /* background-color: antiquewhite; */
+    height: 4rem;
+    width: 80vw;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    
+ 
+}
+.left{
+    display: flex;
+    gap: 10px;
+   
+    align-items: center;
+}
+.line{
+   
+    padding-top: 2px;
+    height: 25px;
+    width: 3px;
+    background-color: rgba(248, 248, 248);
+}
+.center{
+    display: flex;
+    align-items: center;
+    
+    
+    
+    
+}
+.centr-content{
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 50px;
+    width: 220px;
+   
+    background-color: rgba(248, 248, 248);
+    border-radius: 25px;
+    border: 1px solid black;
+}
+/* .db:hover{
+    background-color: white;
+    color: black;
+    height: 90%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+
+} */
+/* .web:hover{
+    background-color: white;
+    color: black;
+    height: 90%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+} */
+.active, .db:hover {
+   background-color: white;
+    color: black;
+    height: 90%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .web,.db{
+    text-decoration: none;
+    height: 90%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: #000;
+    cursor: pointer;
+
+  }
+.right{
+    display: flex;
+    align-items: center;
+   
+    gap: 5px;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(248, 248, 248);
+   border-radius: 15px;
+   width:60px;
+   height: 40px;
+
+   border: blue;
+}
+.profile img{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+.name{
+    font-size: 18px;
+    margin-left: 5px;
+}

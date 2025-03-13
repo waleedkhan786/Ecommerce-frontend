@@ -1,0 +1,82 @@
+.explore{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  /* background-color: cadetblue; */
+height: 15vh;
+width: 80vw;
+border-bottom: 1px solid #ccc;
+}
+.left-child{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.center-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(191, 189, 189, 0.433);
+    border-radius: 25px;
+    width:80px;
+    height: 50px;
+   gap: 10px;
+
+   border: blue;
+}
+.men{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(191, 189, 189, 0.433);
+    border-radius: 25px;
+    width:80px;
+   height: 50px;
+   gap: 10px;
+   border: blue;
+}
+.women{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(191, 189, 189, 0.433);
+    border-radius: 25px;
+    width:80px;
+   height: 50px;
+   gap: 10px;
+   border: blue;
+}
+.right-child{
+    display: flex;
+    gap: 10px;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(191, 189, 189, 0.433);
+    border-radius: 25px;
+    width:80px;
+   height: 50px;
+
+   
+   
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(191, 189, 189, 0.433);
+   border-radius: 35px;
+   width:50px;
+   height: 50px;
+
+ margin-right: 10px;
+    
+}

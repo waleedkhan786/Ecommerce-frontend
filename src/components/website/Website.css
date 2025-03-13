@@ -1,0 +1,36 @@
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+   
+}
+.product{
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* background-color: aquamarine; */
+    height: 65vh;
+    width: 22vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    
+
+}
+.product p{
+    background-color: rgb(137, 137, 245);
+    height: 40px;
+    width: 40px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#product{
+    display: flex;
+   
+    height: 55vh;
+    width: 21vw;
+}
