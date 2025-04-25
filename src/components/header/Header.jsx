@@ -1,14 +1,16 @@
 import { useEffect,useState } from 'react'
 import "./Header.css"
 import { Link } from 'react-router-dom';
+import { AppAuth } from '../../../Context/AppContext.jsx';
 
 export const Header = () => {
+  const auth = AppAuth();
   const [path, setpath]= useState("");
   useEffect(()=>{
 setpath(window.location.pathname)
   }, []);
   return (
-    <div>
+    <div className='Header'>
         <header>
             <div className="navbar">
                 <div className="left">
@@ -16,7 +18,6 @@ setpath(window.location.pathname)
                   <h1>37</h1>
                   </div>
                   <div className="line">
-
                   </div>
                   <div className="content">
                     <h3>Orders</h3>
@@ -27,8 +28,9 @@ setpath(window.location.pathname)
 
                 <div className="center">
                     <div className="centr-content">
-                      <Link to={"/dashboard"} className={`db ${path == "/dashboard"?"active":''}`}>Dashboard</Link>
-                      <Link  to={"/website"} className={`web ${path == "/website"?"active":''}`}>Website</Link>
+                     {auth.loggedIn && auth.user ? <> <Link to={"/dashboard"} className={`db ${path == "/dashboard"?"active":''}`}>Dashboard</Link>
+                     <Link  to={"/website"} className={`web ${path == "/website"?"active":''}`}>Website</Link></>:<> <Link to={"/login"} className="db">Login</Link>
+                     <Link  to={"/signup"} className="db">Signup</Link></>}
                     </div>
                 </div>
                 <div className="right">
@@ -41,7 +43,7 @@ setpath(window.location.pathname)
                     <img src='./user.JPG'></img>
                     </div>
                     <div className="name">
-                      <p>Waleed</p>
+                      <p>{auth.user?.name}</p>
                     </div>
                 </div>
             </div>

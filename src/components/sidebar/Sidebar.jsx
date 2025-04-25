@@ -1,6 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Sidebar.css"
-const Sidebar = () => {
+import toast from 'react-hot-toast';
+import { AppAuth } from '../../../Context/AppContext.jsx';
+const Sidebar = ({setShowProduct}) => {
+const auth = AppAuth();
+    const handleDelete = async()=>{
+        try{
+            const data = await auth?.Logout();
+            if(data){
+                 toast.success(data.data.message,"logout");
+                 return  window.location.pathname = "/website"
+            }
+        }catch(err){
+            console.log(err.message)
+            return toast.error(err.message,"logout");
+
+        }
+    }
+ 
   return (
     <div className='sidebar'>
         <div className='container'>
@@ -29,7 +46,6 @@ const Sidebar = () => {
 <i className="fa-solid fa-lightbulb"></i>
 <p>Inspiration</p>
 </div>
-
             </div>
             <hr></hr>
             <div className="actions">
@@ -43,10 +59,10 @@ const Sidebar = () => {
                         Request & Product
                     </p>
                     </div>
-                    <div className="link">
+                    <div className="link" onClick={()=>setShowProduct(true)}>
                     <i className="fa-solid fa-plus act-icon" ></i>
                     <p id='small'>
-                        Add Member
+                        Add Product
                     </p>
                     </div>
                 </div>
@@ -67,12 +83,11 @@ const Sidebar = () => {
                 <p className='ord-heading'>See all</p>
             </div>
            
-           <div className="logout">
+           {auth.loggedIn && auth.user  ? <><div className="logout" onClick={()=>handleDelete()}>
            <i className="fa-solid fa-right-from-bracket"></i>
             <p>LogOut</p>
-           </div>
+           </div></>:<></>}
         </div>
-
         
     </div>
   )
